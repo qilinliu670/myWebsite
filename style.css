@@ -1,0 +1,56 @@
+body {
+	background-color: azure;
+	font-family: georgia, serif;
+}
+
+div {
+	border-radius: 5px;
+	margin: 10px;
+	padding: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+th {
+	width: 300px;
+}
+
+.selected {
+	color: aqua;
+}
+
+#header {
+	background-color: aliceblue;
+	font-size: 20px;
+}
+
+#email {
+	float: right;
+}
+
+#left {
+	background-color: antiquewhite;
+	display: inline-block;
+	height: 800px;
+	text-align: center;
+	width: 10%;
+}
+
+#right {
+	background-color: beige;
+	display: inline-block;
+	float: right;
+	height: 800px;
+	width: 85%;
+}
+
+#right h4 {
+	font-weight: bold;
+}
+
+#footer {
+	background-color: aquamarine;
+	text-align: center;
+}

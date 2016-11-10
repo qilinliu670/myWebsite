@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Qilin's Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="myApp" ng-controller="MainController">
+	<div id="header">
+		<a id="name">{{ name }}</a>
+		<a id="email" href="mailto:jasonliu@6700@gmail.com">{{ email }} </a>
+	</div>
+	<div id="left">
+		<a class='link' id="home-link" href="#"><h3>Home</h3></a>
+		<a class='link' id="transcript-link" href="#"><h3>My Transcript</h3></a>
+		<a class='link' id="about-link" href="#"><h3>About Me</h3></a>
+	</div>
+	<div id="right">
+		<div id="home">
+			<h4>Objective</h4>
+			<p>{{ objective }}</p>
+			<h4>Experience</h4>
+			<ul>
+				<li>
+					<p>{{ experience1 }} 
+						<a href='https://www.codecademy.com/coreJumper43845'>
+							Codecademy
+						</a>
+					</p>
+				<li>
+					<p>Made a <a href="http://qilinliu.ml">website</a> that introduces some famous classical music pieces
+					</p>
+				</li>
+				<li>
+					<p>{{ experience2 }} 
+						<a href='https://github.com/DevelopersGuild/lollipop-fantastyland'>
+							{{ game }}
+						</a>
+					</p>
+				</li>
+			</ul>
+			<h4>Skills</h4>
+			<p>{{ skills }}<p>
+			<h4>Education</h4>
+			<p>{{ education }}</p>
+		</div>
+		<div id="transcript">
+			<table>
+				<tr>
+					<th>Subject</th>
+					<th>Title</th>
+					<th>Grade</th>
+				</tr>
+				<tr>
+					<th>ARTS</th>
+					<th>Intro to Visual Arts</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>ASTR</th>
+					<th>Solar System Astronomy</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>CIS</th>
+					<th>Adv C Programming</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>CIS</th>
+					<th>Beg Prog Method C++</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>CIS</th>
+					<th>Cmptr Sftware Qual Assur</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>CIS</th>
+					<th>Data Abstract & Structures</th>
+					<th>A+</th>
+				</tr>
+				<tr>
+					<th>CIS</th>
+					<th>Intermed Prog Method C++</th>
+					<th>A+</th>
+				</tr>
+				<tr>
+					<th>CIS</th>
+					<th>Intro 8086/IA 32 Assmbly Lang</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>CIS</th>
+					<th>Intro to UNIX/LINUX</th>
+					<th>A</th>
+				</th>
+				<tr>
+					<th>CIS</th>
+					<th>Java Prgrmng as Second Languag</th>
+					<th>A-</th>
+				</tr>
+				<tr>
+					<th>CIS</th>
+					<th>Object Oriented Analys & Desgn</th>
+					<th>A-</th>
+				</tr>
+				<tr>
+					<th>EWRT</th>
+					<th>Composition and Reading</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>HIST</th>
+					<th>Hist U.S. to Erly Natnl Era</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>JAPN</th>
+					<th>Elem Japanese (1st Qtr)</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>JAPN</th>
+					<th>Elem Japanese (2nd Qtr)</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>MATH</th>
+					<th>Calculus I</th>
+					<th>A+</th>
+				</tr>
+				<tr>
+					<th>MATH</th>
+					<th>Calculus II</th>
+					<th>B</th>
+				</tr>
+				<tr>
+					<th>MATH</th>
+					<th>Calculus III</th>
+					<th>A+</th>
+				</tr>
+				<tr>
+					<th>MATH</th>
+					<th>Calculus IV</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>MATH</th>
+					<th>Discrete Mathematics</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>MATH</th>
+					<th>Linear Algebra</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>MATH</th>
+					<th>Precalc II: Trig Functions</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>MATH</th>
+					<th>Precalc III: Advanced Topics</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>MUSI</th>
+					<th>Class Piano I</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>MUSI</th>
+					<th>Intro to Music: Westrn Culture</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>PHIL</th>
+					<th>Crit Thinking & Writng</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>PHYS</th>
+					<th>Phys Scient/Eng:Elctrcty/Magnet</th>
+					<th>A-</th>
+				</tr>
+				<tr>
+					<th>PHYS</th>
+					<th>Phys Scient/Eng:Mechancs</th>
+					<th>A</th>
+				</tr>
+				<tr>
+					<th>PHYS</th>
+					<th>Prep Physics</th>
+					<th>A</th>
+				</tr>
+			</table>
+		</div>
+		<div id="about">
+			<p>
+				When I was 8, my parents bought me my first personal computer. Since then I have always been fascinated by its powerful functions as well as its meticulous logic. The more I got to know computers, the more I wanted to know more about them. I did not feel satisfied with merely knowing how to use them. I also wanted to know how they work. After I came to the Silicon Valley, I felt like I had come to the paradise, because there are tons of opportunity to learn more about computers. Therefore when I went to college, I chose computer science as my major without hesitation.
+				<br><br>
+				During my college years, I have seized every opportunity I have sought to expand my knowledge in computer science. To illustrate, I have passed all the courses required to transfer and earned a good GPA of 3.8. I have joined Developer's Guild, a computer science club in my college, and have made friends with people who share the same interests with me in order to improve my skills. I have been attending meet-ups to keep myself updated. I have self-studied online and learned many things I would never learn in classes. I have been working on programs and websites in my spare time to practice what I learned. Besides, I have also worked part-time as a cashier and used the income to pay my tuition.
+				<br><br>
+				As a student majoring in computer science, creativity is greatly required and demonstrated in the design of programs and the implementation of the design. Technology is all about creating stuff rather than managing data. It is like painting a picture, firstly you need to know how you want your picture to be like, then you carry out your plan and deal with the details. The integrated development environment, or IDE, is the blank canvas for programmers. In order to make a successful program, to have a general idea what it does is far not enough. Firstly the programmer needs to brainstorm features the program could have, then the programmer chooses the ones that are worth implementing. And there are, of course, tons of coding, debugging and revisions afterward, which contains tons of challenges to be met. Therefore, computer science demands a lot of creativity.
+				<br><br>
+				As a student, I would say my greatest skill is learning. In this world where new things happen every single day, the things for one to know increase rapidly. Thus ignorance is not scary, what is scary is to stop learning. The reason I earned a high GPA is not because I know everything in the beginning. It is because I know how to learn, in other words, I know the most effective method of learning. I could always get the most out of a lecture, and I always make sure I got everything when doing my homework. It may sound easy, but it is easier said than done. It is a habitual thing, and you need to keep doing so for years in order to form the habit. However, it is totally rewarding. I feel like I have already got the key to all the doors to the knowledge in this world, and all I need to do is to unlock the doors one by one.
+				<br><br>
+				The one thing that set me apart from other candidates, in my opinion, is my passion for learning. I have heard a lot of people complaining that college courses were hard, but I felt like it was just a breeze. After I got to know my classmates, I realized that almost every college student considers studying as a way to get degrees, get a good job, earn money and success. But for me, studying is self-contained. In other words, I study for fun. I feel right when I'm studying, I feel even better after I learn something new, and it makes me want to learn more. Thus I study without respite like I am addicted to knowledge.
+				<br><br>
+				Once I dreamed myself as an ordinary person with a dead-end job, a discouraging salary and an unhappy family to support, counting off the days left to retire on my fingers. The dream is the worst nightmare I have ever had, and it is still haunting me. From then on I decided to keep studying, to keep learning new stuff and to make my life meaningful, rather than to stay in my comfort zone and to bore myself to death. If I do not exercise, I would not have a strong and shaped body. Likewise, if I settle down with what I have, I would gradually lose the ability to learn, and would eventually be overcome by the fear of the unknown.
+				<br><br>
+				My life may not seem colorful to other people, but I never feel regretted. Lingering in a library and finishing a full-length novel, turning on the radio at midnight and being intoxicated in the presenter's conversation, encountering a heart-warming work among the sea of Internet... I would have experienced none of those if I have lived an ordinary life. Thus if I need to transfer to a university in order to keep my current lifestyle, then I would transfer at all costs, even if it means I have to work harder to save for the tuition and have less time to rest and have fun.
+			</p>
+		</div>
+	</div>
+	<div id="footer">
+		<p>{{ address }} | {{ phoneNum }}</p>
+	</div>
+	<script src="jquery-3.1.1.js"></script>
+	<script src="script.js"></script>
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="controller.js"></script>
+</body>
+</html>
