@@ -33,17 +33,17 @@ th {
 #left {
 	background-color: antiquewhite;
 	display: inline-block;
-	height: 800px;
+	height: 750px;
 	text-align: center;
-	width: 10%;
+	width: 15%;
 }
 
 #right {
 	background-color: beige;
 	display: inline-block;
 	float: right;
-	height: 800px;
-	width: 85%;
+	height: 750px;
+	width: 80%;
 }
 
 #right h4 {
