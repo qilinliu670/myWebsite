@@ -2,7 +2,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	$scope.name = 'Qilin Liu';
 	$scope.email = 'jasonliu6700@gmail.com';
 	$scope.objective = 'To take a position in software industry';
-	$scope.experience1 = 'Self studied most of the courses in';
+	$scope.experience1 = 'Self studied and completed most of the courses in';
 	$scope.experience2 = "Joined Developer's Guild in De Anza College and helped making a game called";
 	$scope.game = 'Lollipop Fantasyland';
 	$scope.skills = 'AngularJS, C, C++, CSS, HTML, Java, JavaScript, jQuery, PHP, Python, ReactJS, Ruby, Sass, SQL';
